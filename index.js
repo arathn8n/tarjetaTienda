@@ -19,3 +19,11 @@ sumaBtn.addEventListener('click', function(){
     cantidad.innerHTML = contador;
     actualizacionTotal();
 });
+
+restarBtn.addEventListener('click', function(){
+    if(contador > 0){
+        contador--;
+        cantidad.innerHTML = contador;
+        actualizacionTotal();
+    }
+});
