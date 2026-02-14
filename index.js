@@ -8,4 +8,14 @@ let sumaBtn = document.querySelector('.sumar');
 let restarBtn = document.querySelector('.restar');
 let valorTotal = document.querySelector('.valor-total');
 
+let contador = 0;
 
+function actualizacionTotal(){
+    valorTotal.innerHTML = contador * precio;
+}
+
+sumaBtn.addEventListener('click', function(){
+    contador++;
+    cantidad.innerHTML = contador;
+    actualizacionTotal();
+});
